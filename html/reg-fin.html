@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+</head>
+
+<body class="mainbody">
+    <nav>
+        <a href="../index.html">О проекте</a>
+        <a href="works.html">Работы</a>
+        <a href="reg.html">Регистрация</a>
+    </nav>
+
+    <div class="content">
+        <h1> Введенные данные </h1>
+        <div class="form-data">
+            <p id="res"></p>
+        </div>
+        <h2 style="text-align: center;"> Другие участники </h2>
+        <div class="form-data">
+        <h5> Не найдено </h5>
+        </div>
+
+
+        <script>
+            /* Вывод даты из формы */
+            var data = window.location.search;
+            var params = new URLSearchParams(data);
+
+            var secname = params.get("sname");
+            var firstname = params.get("fname");
+            var thierdname = params.get("tname");
+            var phone = params.get("phone");
+            var email = params.get("email");
+            var subject = params.get("subject");
+            var bday = params.get("bday");
+            var check = params.get("dokl");
+
+            var getData = "ФИО: " + secname + " " + firstname + " " + thierdname + "<br>";
+            getData += "Номер теоефона: " + phone + "<br>";
+            getData += "Почта: " + email + "<br>";
+            getData += "Сфера участия: " + subject + "<br>";
+            getData += "Дата рождения: " + bday + "<br>";
+            getData += "Наличие доклада: " + check + "<br>";
+
+            document.getElementById("res").innerHTML = getData;
+
+
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+        <footer>
+            <div>
+                нижняя часть
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+
+</html>

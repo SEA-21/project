@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+</head>
+
+<body class="mainbody">
+
+    <nav>
+        <a href="../index.html">О проекте</a>
+        <a href="works.html">Работы</a>
+        <a href="reg.html">Регистрация</a>
+    </nav>
+
+    <div class="content">
+
+        <div class="form">
+            <form method="GET" action="reg-fin.html">
+                <fieldset>
+                    <p>
+                        <label for="sname">Фамилия:</label>
+                        <input type="text" id="sname" name="sname" placeholder="Смирнов" required>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <label for="fname">Имя:</label>
+                        <input type="text" id="fname" name="fname" placeholder="Семён" required>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <label for="tname">Отчество:</label>
+                        <input type="text" id="tname" name="tname" placeholder="Александрович" required>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-45-678" required>
+                    </p>
+
+
+                    <br>
+
+                    <p>
+                        <label for="email">Почта:</label>
+                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                            placeholder="username@hostname.rucom" required>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <label for="subject">Секции:</label>
+                        <select name="subject" name="subject" id="subject" required>
+                            <option value="Math">Математика</option>
+                            <option value="Phys">Физика</option>
+                            <option value="IT">Информатика</option>
+                        </select>
+
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <label for="bdate">Дата рождения:</label>
+                        <input type="date" id="bdate" name="bdate">
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <label for="dokl">Доклад:</label>
+                        <input class="toggle" type="checkbox" />
+                    </p>
+
+
+                </fieldset>
+                <div class="submit">
+                    <input value="Зарегестрироваться" type="submit" id="btn_s">
+                </div>
+
+
+
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
